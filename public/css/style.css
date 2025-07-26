@@ -107,7 +107,7 @@ body{
     padding-right: 0 !important;
 }
 .edit-bttn{
-    margin-left: 315px !important;
+    margin-left: 270px !important;
 }
 /* 
 map */
@@ -183,4 +183,10 @@ map */
   background-color: #fe424d;
   border-color: #fe424d;
 }
-
+@media (max-width: 576px) {
+  .show-title {
+    width: 100% !important;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+}
