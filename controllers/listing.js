@@ -19,7 +19,7 @@ module.exports.showListing = async (req,res)=>{
     let list = await Listing.findById(id).populate({path:"reviews",populate:{path:"author"},}).populate("owner");
     
     if(list===null || !list){
-        req.flash("error","Listing you requested for does not exist");
+        req.flash("error","Listing you requested for, does not exist!");
         return res.redirect("/listings");
     }
     
@@ -52,7 +52,7 @@ module.exports.renderEditForm = async (req,res,next)=>{
     let {id} = req.params;
     let list = await Listing.findById(id);
     if(list===null || !list){
-        req.flash("error","Listing you requested for does not exist");
+        req.flash("error","Listing you requested for, does not exist!");
         return res.redirect("/listings");
     }
 
