@@ -118,6 +118,10 @@ map */
     border-radius: 10px;
 }
 
+.review-section,.All-section{
+  width: 53% !important;
+}
+
 /* Optional: Adjust height for small screens */
 @media (max-width: 576px) {
     #map {
@@ -272,11 +276,5 @@ map */
     margin-bottom: 1rem;
   }
 }
-.review-section,
-  .map-section ,
-  .All-section {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+
 
