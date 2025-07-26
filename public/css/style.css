@@ -123,7 +123,7 @@ map */
 }
 
 .review-all{
-  width: 100% !important;
+  width: auto !important;
 }
 
 .starability-result {
@@ -131,6 +131,13 @@ map */
     overflow-x: auto !important;
     white-space: nowrap !important;
   }
+
+.All-section{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100% !important;
+  gap:16px;
+}
 
 /* Optional: Adjust height for small screens */
 @media (max-width: 576px) {
@@ -287,4 +294,11 @@ map */
   }
 }
 
-
+@media (max-width:768){
+  .All-section{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100% !important;
+    gap:16px;
+  }
+}

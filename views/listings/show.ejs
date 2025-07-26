@@ -71,7 +71,8 @@
         <% if(list.reviews.length >0) { %>
         <div class="row All-section">
             <p><b>All Reviews</b></p>
-        <% for(review of list.reviews) {%>
+        <div>
+            <% for(review of list.reviews) {%>
            <div class="card col-12 col-md-5 mb-3 ms-md-3 review-all">
             <div class="card-body">
                 <h5 class="card-title mt-1">@<%= review.author.username%></h5>
@@ -85,6 +86,7 @@
             </div>
            </div>
         <% } %>
+        </div>
         </div>
         <% } %>
         
