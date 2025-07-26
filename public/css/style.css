@@ -272,4 +272,14 @@ map */
     margin-bottom: 1rem;
   }
 }
+/* Align review and map with main card on desktop */
+@media (min-width: 768px) {
+  .review-section,
+  .map-section ,
+  All-section {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
