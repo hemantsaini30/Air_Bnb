@@ -122,6 +122,12 @@ map */
   width: 53% !important;
 }
 
+.starability-result {
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+  }
+
 /* Optional: Adjust height for small screens */
 @media (max-width: 576px) {
     #map {
