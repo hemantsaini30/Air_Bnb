@@ -24,12 +24,13 @@
     </div>
 
     <% if(currUser && list.owner._id.equals(currUser._id)) { %>
-    <div class="btns mb-3">
-        <a href="/listings/<%=list._id%>/edit" class="btn btn-dark col-1 offset-2 edit-btn edit-bttn"> Edit</a><br/>
-        <form method="post" action="/listings/<%=list._id%>?_method=DELETE">
-            <button class="btn btn-dark offset-5">Delete</button>
-        </form>
+    <div class="btns mb-3 d-flex flex-column flex-md-row gap-2">
+    <a href="/listings/<%=list._id%>/edit" class="btn btn-dark w-100 w-md-auto">Edit</a>
+    <form method="post" action="/listings/<%=list._id%>?_method=DELETE" class="w-100 w-md-auto">
+        <button class="btn btn-dark w-100 w-md-auto">Delete</button>
+    </form>
     </div>
+
     <% } %>
    
     
