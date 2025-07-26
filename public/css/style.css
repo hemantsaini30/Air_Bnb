@@ -124,6 +124,7 @@ map */
 
 .review-all{
   width: auto !important;
+  padding: 10px;
 }
 
 .starability-result {
@@ -132,7 +133,7 @@ map */
     white-space: nowrap !important;
   }
 
-.All-section{
+.new-div-review{
   display: grid;
   grid-template-columns: 50% 50%;
   width: 100% !important;
