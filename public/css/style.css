@@ -118,7 +118,7 @@ map */
     border-radius: 10px;
 }
 .review-section{
-  width: 53%;
+  width: 53% !important;
 }
 
 .All-section{
