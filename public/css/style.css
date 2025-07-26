@@ -122,6 +122,10 @@ map */
   width: 53% !important;
 }
 
+.review-all{
+  width: 100% !important;
+}
+
 .starability-result {
     max-width: 100% !important;
     overflow-x: auto !important;
