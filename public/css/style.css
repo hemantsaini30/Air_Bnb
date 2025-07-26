@@ -117,9 +117,12 @@ map */
     height: 400px;
     border-radius: 10px;
 }
+.review-section{
+  width: 53%;
+}
 
-.review-section,.All-section{
-  width: 53% !important;
+.All-section{
+  width: 100% !important;
 }
 
 .review-all{
