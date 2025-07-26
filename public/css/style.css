@@ -155,25 +155,32 @@ map */
     margin-bottom: 1rem;
   }
 
-  .btns a,
-  .btns form,
-  .btns button {
+  /* Fix col-1 offset-2 misalignment */
+  .btns .edit-btn,
+  .btns .btn-dark {
     width: 80% !important;
-    margin: 0 auto;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0.6rem 0;
     font-size: 1rem;
     border-radius: 6px;
-    padding: 0.6rem 0;
   }
 
   .btns form {
+    width: 100%;
     display: flex;
     justify-content: center;
   }
+
+  .btns button {
+    width: 80% !important;
+  }
 }
 
-/* Red Button Styling */
+/* Button color */
 .btns .btn-dark,
 .btns .btn-dark:hover {
   background-color: #fe424d;
   border-color: #fe424d;
 }
+
