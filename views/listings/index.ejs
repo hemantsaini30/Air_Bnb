@@ -1,62 +1,55 @@
 <% layout("/layouts/boilerplate")%>
 <style>
+  /* Base styles */
   #filters {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem 0;
+    gap: 15px;
+    padding: 15px 0;
   }
 
   .filter {
     text-align: center;
-    opacity: 0.7;
     min-width: 80px;
-    padding: 0.5rem;
-    transition: all 0.2s ease;
-  }
-  .filter:hover {
-    opacity: 1;
-    cursor: pointer;
-  }
-  .filter p {
-    font-size: 0.8rem;
-    margin-top: 0.25rem;
-    margin-bottom: 0;
+    padding: 8px 12px;
   }
 
-  /* Tax toggle stays in same line by default */
   .tax-toggle {
-    border: 1px solid black;
-    border-radius: 1rem;
-    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 8px 15px;
     margin-left: auto;
-    white-space: nowrap;
   }
 
-  /* iPad (768px-992px) */
-  @media (max-width: 992px) {
+  /* Desktop (992px+) */
+  @media (min-width: 992px) {
     .filter {
-      flex: 1 0 calc(33% - 1rem); /* 3 per row */
+      flex: 0 0 auto;
     }
   }
 
-  /* Small tablets (576px-768px) */
-  @media (max-width: 768px) {
+  /* iPad (768px-991px) */
+  @media (max-width: 991px) and (min-width: 768px) {
     .filter {
-      flex: 1 0 calc(25% - 1rem); /* 4 per row */
-    }
-  }
-
-  /* Mobile (<576px) */
-  @media (max-width: 576px) {
-    .filter {
-      flex: 1 0 calc(50% - 1rem); /* 2 per row */
+      flex: 0 0 calc(25% - 15px); /* 4 per row */
     }
     .tax-toggle {
       margin-left: 0;
-      width: 100%;
-      order: 1; /* Moves to new line */
+      flex: 0 0 100%;
+      order: 1;
+    }
+  }
+
+  /* Mobile (767px and below) */
+  @media (max-width: 767px) {
+    .filter {
+      flex: 0 0 calc(50% - 15px); /* 2 per row */
+    }
+    .tax-toggle {
+      margin-left: 0;
+      flex: 0 0 100%;
+      order: 1;
     }
   }
 </style>
