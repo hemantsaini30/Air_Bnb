@@ -1,35 +1,49 @@
 <style>
-  .search-btn{
+  .search-btn {
     background-color: #fe424d;
     color: #fff;
     border-radius: 25px;
-    padding: 0 1rem 0 1rem;
+    padding: 0 1rem;
   }
-  .search-btn:hover{
+
+  .search-btn:hover {
     background-color: #fe424d;
     color: #fff;
   }
-  .search-btn i{
+
+  .search-btn i {
     display: inline;
     margin-right: 0.5rem;
   }
-  .search-input{
+
+  .search-input {
     border-radius: 25px;
-    padding: 0.5rem 3rem 0.5rem 3rem;
+    padding: 0.5rem 3rem;
   }
+
   @media (max-width: 768px) {
     .navbar-collapse {
-      position: relative;
+      position: absolute;
+      top: 56px; /* Adjust depending on your navbar height */
+      left: 0;
+      width: 100%;
+      background-color: white;
+      padding: 1rem;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
       z-index: 1000;
-      background: white;
-      padding-bottom: 10px;
-      box-shadow: 0 10px 10px rgba(0,0,0,0.1);
     }
-    #filters {
-      margin-top: 10px;
+
+    .navbar-nav {
+      padding-left: 1rem;
+    }
+
+    .navbar-collapse .form-control,
+    .navbar-collapse .btn {
+      margin-top: 0.5rem;
     }
   }
 </style>
+
 
 <nav class="navbar navbar-expand-md bg-body-light sticky-top" style="border-bottom:  1px solid rgba(0, 0, 0, 0.1);">
   <div class="container-fluid">
